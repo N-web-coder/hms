@@ -1,61 +1,101 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Hostel Management System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A web-based Hostel Management System built with **Laravel** to manage hostel admissions, students, staff, rooms, beds, payments, attendance, enquiries, and invoices through role-based dashboards.
 
-## About Laravel
+## 📌 Project Overview
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+The Hostel Management System simplifies day-to-day hostel operations by providing separate interfaces and functionality for Admin, Staff, and Students.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+The Admin can manage hostel facilities, admissions, staff, payments, and other operations. Staff members can manage attendance, admissions, and enquiries, while students can access their admission details, payments, mess information, and enquiries.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## ✨ Features
 
-## Learning Laravel
+### 🔐 Authentication
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+* User registration and login
+* Logout functionality
+* Forgot password
+* Password reset
+* Authenticated routes
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### 👨‍💼 Admin Dashboard
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+* Admin dashboard
+* Manage student admissions
+* Approve student admissions
+* View and manage student records
+* Edit and delete student records
+* View complete student details
+* View student payment history
+* Generate student payment PDF
+* Manage staff
+* Approve staff admissions
+* Manage staff salary payments
+* View staff salary history
+* Generate staff salary slips
+* View staff attendance history
+* Manage hostel rooms and beds
+* Allocate rooms and beds
+* Edit and remove room allocations
+* Restore deleted rooms and beds
+* Permanently delete rooms and beds
+* Manage enquiries and replies
+* Create and download invoices
+* Update company information
 
-## Laravel Sponsors
+### 👨‍💻 Staff Dashboard
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+* Staff dashboard
+* View admissions
+* Submit admission forms
+* Manage attendance
+* View attendance history
+* View salary history
+* Submit enquiries
 
-### Premium Partners
+### 🎓 Student Dashboard
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+* Student dashboard
+* Submit hostel admission application
+* View payment records
+* View mess information
+* View monthly payments
+* Submit monthly payments
+* Submit and view enquiries
 
-## Contributing
+## 🛠️ Tech Stack
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+* **Backend:** PHP, Laravel
+* **Database:** MySQL
+* **Frontend:** Blade Templates, HTML, CSS, JavaScript
+* **Authentication:** Laravel authentication
+* **PDF Generation:** Used for payment records and salary slips
 
-## Code of Conduct
+> Update the technology list if your project uses any additional libraries or packages.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## ⚙️ Requirements
 
-## Security Vulnerabilities
+Make sure the following are installed on your system:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+* PHP version compatible with the Laravel version used by this project
+* Composer
+* MySQL
+* Node.js and npm (if frontend assets require building)
+* Git
 
-## License
+## 🔑 Demo Admin Login
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Use the following credentials to explore the Admin dashboard.
+
+| Field     | Demo Credentials                          |
+| --------- | ----------------------------------------- |
+| Email     | [admin@gmail.com](mailto:admin@gmail.com) |
+| Password  | 12345678                                  |
+| Login URL | `/`                                       |
+
+**Important:** The demo admin account must exist in the database. If it is not already included in the provided database or seeders, create the account before logging in.
+
+These credentials are intended for demonstration purposes only. Do not use this password for a production account.
+
+
+This project is intended for learning, demonstration, and portfolio purposes. Add a license file if you want to specify how others may use, modify, or distribute the code.

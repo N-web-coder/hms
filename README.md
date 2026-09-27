@@ -71,8 +71,6 @@ The Admin can manage hostel facilities, admissions, staff, payments, and other o
 * **Authentication:** Laravel authentication
 * **PDF Generation:** Used for payment records and salary slips
 
-> Update the technology list if your project uses any additional libraries or packages.
-
 ## ⚙️ Requirements
 
 Make sure the following are installed on your system:
